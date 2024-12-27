@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+return ( 
+    <div> 
+      <h1>Hello Shivansh Pandey|Shivam</h1>
+      <h2>How to create react app using vite</h2>
+      <ul type="disc">
+        <li>npm create vite</li>
+        <li>set project name</li>
+        <li>cd project name</li>
+        <li>npm install</li>
+        <li>npm run dev</li>
+      </ul>
+      <h2>To run the vite react project code simply open the terminal and write the code given below</h2>
+      <ul type="disc">
+        <li>cd project name</li>
+        <li>npm run dev</li>
+      </ul>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+ )
 }
-
 export default App
