@@ -1,24 +1,115 @@
-import { useState } from "react"
+import { useState } from "react";
 
 function App() {
-  const [color,setcolor] = useState("white")
+  // State hook to manage the background color
+  const [color, setColor] = useState("white");
 
   return (
-    <div className="w-full  h-screen duration-0" style={{backgroundColor:color}}>
-      <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2" >
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('red')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"red"}}>Red</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('grey')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"grey"}}>Grey</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('green')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'green'}}>Green</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('blue')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'blue'}}>Blue</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('Purple')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'Purple'}}>Purple</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('Pink')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'Pink'}}>Pink</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('violet')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'violet'}}>Violet</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('indigo')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'indigo'}}>Indigo</button></div>
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl" ><button onClick={function(){setcolor('Black')}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'Black'}}>Black</button></div>
+    <div className="w-full h-screen duration-0" style={{ backgroundColor: color }}>
+      {/* Fixed bottom button container */}
+      <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
+        {/* Color buttons container */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          {/* Button for Red color */}
+          <button
+            onClick={() => setColor('red')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: "red" }}
+          >
+            Red
+          </button>
+        </div>
+
+        {/* Button for Grey color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('grey')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: "grey" }}
+          >
+            Grey
+          </button>
+        </div>
+
+        {/* Button for Green color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('green')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'green' }}
+          >
+            Green
+          </button>
+        </div>
+
+        {/* Button for Blue color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('blue')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'blue' }}
+          >
+            Blue
+          </button>
+        </div>
+
+        {/* Button for Purple color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('purple')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'purple' }}
+          >
+            Purple
+          </button>
+        </div>
+
+        {/* Button for Pink color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('pink')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'pink' }}
+          >
+            Pink
+          </button>
+        </div>
+
+        {/* Button for Violet color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('violet')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'violet' }}
+          >
+            Violet
+          </button>
+        </div>
+
+        {/* Button for Indigo color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('indigo')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'indigo' }}
+          >
+            Indigo
+          </button>
+        </div>
+
+        {/* Button for Black color */}
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
+          <button
+            onClick={() => setColor('black')}
+            className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+            style={{ backgroundColor: 'black' }}
+          >
+            Black
+          </button>
+        </div>
       </div>
-      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
