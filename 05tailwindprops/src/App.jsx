@@ -24,6 +24,7 @@ function Card({ someobj, username }) {
         </div>
       </div>
     </div>
+    
   );
 }
 
